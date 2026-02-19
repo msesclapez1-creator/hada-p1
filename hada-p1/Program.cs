@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+///Programa principal
 namespace hada_p1
 {
     class Program
