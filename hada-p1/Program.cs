@@ -16,7 +16,7 @@ namespace hada_p1
 
             do
             {
-                Console.WriteLine("¿Convertir desde (s) segundos o (m) minutos?");
+                Console.WriteLine("¿Convertir desde (s) segundos o (m) minutos o (h) horas?");
                 string unidad = Console.ReadLine();
 
                 Console.WriteLine("Introduce cantidad:");
@@ -24,10 +24,12 @@ namespace hada_p1
 
                 if (unidad == "s")
                     Console.WriteLine(HadaP1.Seconds2Minutes(valor) + " minutos");
-                else
+                else if (unidad == "m")
                     Console.WriteLine(HadaP1.Minutes2Seconds(valor) + " segundos");
+                else
+                    Console.WriteLine(HadaP1.HorasAMinutos(valor) + " horas");
 
-                Console.WriteLine("¿Otra conversión? (y/n)");
+                    Console.WriteLine("¿Otra conversión? (y/n)");
                 opcion = Console.ReadLine();
 
             } while (opcion == "y");

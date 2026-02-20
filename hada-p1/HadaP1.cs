@@ -27,6 +27,13 @@ namespace hada_p1
         {
             return m * 60;
         }
+
+        /// Convierte horas a minutos.
+        public static int HorasAMinutos(int horas)
+        {
+            return horas * 60;
+        }
+
     }
 }
 
